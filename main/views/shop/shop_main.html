@@ -13,8 +13,11 @@
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom Common CSS -->
   <link href="../../css/common.css" rel="stylesheet">
+
+  <!-- Jquery Modal CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" rel="stylesheet">
 
 </head> 
 
@@ -70,8 +73,8 @@
         <p><b>(Shop Introduce)</b> This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <div>
           <a class="btn btn-primary btn-lg" href="#" role="button">예약관리 &raquo;</a>
-          <a class="btn btn-primary btn-lg" href="#" role="button">정보수정 &raquo;</a>
-          <a class="btn btn-primary btn-lg" href="#" role="button">페이지 관리 &raquo;</a>
+          <a class="btn btn-secondary btn-lg" href="#" role="button">정보수정 &raquo;</a>
+          <a class="btn btn-secondary btn-lg" href="#" role="button">페이지 관리 &raquo;</a>
           <!-- toggle switch -->
           <div class="toggleWrap">
             <label class="switchTitle">검색 노출</label>
@@ -86,7 +89,7 @@
   
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-md-4">
           <h2>캘린더</h2>
           <p>Calander API</p>
@@ -112,11 +115,17 @@
           </span>
           <!-- /. 별표 점수매기기 -->
           <h6 class="reviewTitle">리뷰 51개 | 1개월 | 3개월 | 6개월</h6>
-          <p><a class="btn btn-secondary" href="#" role="button">예약설정 &raquo;</a></p>
+          <!-- 모달창 -->
+          <div id="ex1" class="modal">
+            <div style="color: black;">Thanks for clicking. That felt good.</div>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <!-- /. 모달창 -->
+          <p><a class="btn btn-secondary" href="#ex1" rel="modal:open" role="button">예약설정 &raquo;</a></p>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-md-12">
           <h2>예약 내역</h2>
           <table class="table table-hover text-center">
@@ -133,19 +142,31 @@
                 <th scope="row">1</th>
                 <td>홍길동</td>
                 <td>2020년 08월 12일</td>
-                <td>09:30 ~ 12:30</td>
+                <td>09:00 ~ 11:00</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>이순신</td>
                 <td>2020년 08월 12일</td>
-                <td>13:30 ~ 15:30</td>
+                <td>11:00 ~ 12:00</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>유관순</td>
                 <td>2020년 08월 12일</td>
-                <td>15:30 ~ 18:30</td>
+                <td>13:00 ~ 15:00</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>유재석</td>
+                <td>2020년 08월 12일</td>
+                <td>15:00 ~ 17:00</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>박명수</td>
+                <td>2020년 08월 12일</td>
+                <td>17:00 ~ 18:00</td>
               </tr>
             </tbody>
           </table>
@@ -179,6 +200,8 @@
   <script src="../../vendor/jquery/jquery.min.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../js/shop-score-star.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </body>
 
 </html>

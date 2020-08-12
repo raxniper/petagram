@@ -87,10 +87,10 @@ DATE : 2020.08.05 ~
     .slider.round {border-radius: 34px;}
     .slider.round:before {border-radius: 50%;}
   /* review title */
-    .reviewTitle {margin-top:20px;}
+    .reviewTitle {margin-top:20px; margin-bottom:20px;}
   /* Score Star */
     .star-input>.input,
-    .star-input>.input>label:hover,
+    /* .star-input>.input>label:hover, */
     .star-input>.input>input:focus+label,
     .star-input>.input>input:checked+label{
         display: inline-block;
