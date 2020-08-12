@@ -115,13 +115,54 @@
           </span>
           <!-- /. 별표 점수매기기 -->
           <h6 class="reviewTitle">리뷰 51개 | 1개월 | 3개월 | 6개월</h6>
-          <!-- 모달창 -->
-          <div id="ex1" class="modal">
-            <div style="color: black;">Thanks for clicking. That felt good.</div>
-            <a href="#" rel="modal:close">Close</a>
+          <p><a class="btn btn-secondary btn-example" href="#layer2" role="button">예약설정 &raquo;</a></p>
+          <!-- 예약설정 팝업 -->
+          <div class="dim-layer">
+              <div class="dimBg"></div>
+              <div id="layer2" class="pop-layer">
+                  <div class="pop-container">
+                      <div class="pop-conts">
+                          <!--content //-->
+                          <table class="table table-sm text-center">
+                            <thead>
+                              <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">예약가능시간</th>
+                                <th scope="col">설정</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>00:00 ~ 01:00</td>
+                                <td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>01:00 ~ 02:00</td>
+                                <td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>02:00 ~ 03:00</td>
+                                <td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>03:00 ~ 04:00</td>
+                                <td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="btn-r">
+                              <!-- <a href="#" class="btn-layerClose">Close</a> -->
+                              <a class="btn btn-primary btn-sm btn-layerClose" href="#" role="button">닫기</a>
+                          </div>
+                          <!--// content-->
+                      </div>
+                  </div>
+              </div>
           </div>
-          <!-- /. 모달창 -->
-          <p><a class="btn btn-secondary" href="#ex1" rel="modal:open" role="button">예약설정 &raquo;</a></p>
         </div>
       </div>
 
@@ -199,9 +240,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../../vendor/jquery/jquery.min.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../js/shop-score-star.js"></script>
-  <!-- jQuery Modal -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="../../js/score-star.js"></script>
+  <script src="../../js/pop-up.js"></script>
 </body>
 
 </html>
