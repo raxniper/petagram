@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>패타그램 - 메인</title>
+  <title>매장 관리자 (정보관리)</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,12 +71,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <img src="../../image/testimg.png" class="rounded-circle btn-block">
+            <img src="../../image/testimg.png" class="rounded-circle btn-block mt-4">
           </div>
           <div class="col-md-10">
-            <h1 class="display-3"><b>Shop Name</b></h1>
-            <p><b>(Shop Introduce)</b> This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <div>
+            <h1 class="display-3 mt-4"><b>매장 이름</b></h1>
+            <!-- <p><b>(Shop Introduce)</b> This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
+            <div class="mt-4">
               <a class="btn btn-secondary btn-lg" href="#" role="button">예약관리 &raquo;</a>
               <a class="btn btn-primary btn-lg" href="#" role="button">정보수정 &raquo;</a>
               <a class="btn btn-secondary btn-lg" href="#" role="button">페이지 관리 &raquo;</a>
@@ -114,7 +114,7 @@
             <div class="row mb-5">
               <div class="col-md-1"></div>
               <div class="col-md-2"><h6><b>매장 소개</b></h6></div>
-              <div class="col-md-8"><input type="text" id="" class="form-control" required></div>
+              <div class="col-md-8"><textarea class="form-control txtarea" required></textarea></div>
               <div class="col-md-1"></div>
             </div>
           </div>
@@ -122,8 +122,7 @@
             <div class="row mb-2">
               <div class="col-md-1"></div>
               <div class="col-md-2"><h6><b>프로필 이미지</b></h6></div>
-              <div class="col-md-6"><input type="text" id="" class="form-control" value="profile-img.png" required readonly></div>
-              <div class="col-md-2"><a class="btn btn-secondary btn-block btn-sm mr-3" href="#" role="button">이미지 선택</a></div>
+              <div class="col-md-8 form-group"><input type="file" class="form-control-file" id="exampleFormControlFile1"></div>
               <div class="col-md-1"></div>
             </div>
           </div>
@@ -131,20 +130,10 @@
             <div class="row mb-5">
               <div class="col-md-1"></div>
               <div class="col-md-2"><h6><b>배경 이미지</b></h6></div>
-              <div class="col-md-6"><input type="text" id="" class="form-control" value="background-img.png" required readonly></div>
-              <div class="col-md-2"><a class="btn btn-secondary btn-block btn-sm mr-3" href="#" role="button">이미지 선택</a></div>
+              <div class="col-md-8 form-group"><input type="file" class="form-control-file" id="exampleFormControlFile1"></div>
               <div class="col-md-1"></div>
             </div>
           </div>
-          <!-- <div class="col-md-12">
-            <div class="row mb-2">
-              <div class="col-md-1"></div>
-              <div class="col-md-2"><h6><b>우편 번호</b></h6></div>
-              <div class="col-md-6"><input type="text" id="" class="form-control" value="000-000" required readonly></div>
-              <div class="col-md-2"><a class="btn btn-secondary btn-block btn-sm mr-3" href="#" role="button">우편번호 검색</a></div>
-              <div class="col-md-1"></div>
-            </div>
-          </div> -->
           <div class="col-md-12">
             <div class="row mb-2">
               <div class="col-md-1"></div>
@@ -153,14 +142,6 @@
               <div class="col-md-1"></div>
             </div>
           </div>
-          <!-- <div class="col-md-12">
-            <div class="row mb-5">
-              <div class="col-md-1"></div>
-              <div class="col-md-2"><h6><b>상세 주소</b></h6></div>
-              <div class="col-md-8"><input type="text" id="" class="form-control" required></div>
-              <div class="col-md-1"></div>
-            </div>
-          </div> -->
           <div class="col-md-12">
             <div class="row mb-2">
               <div class="col-md-1"></div>
@@ -198,7 +179,7 @@
           <div class="row mb-5">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-              <table class="table table-sm text-center">
+              <table class="table text-center">
                 <thead class="table-secondary">
                   <tr><th scope="col">카테고리명</th><th scope="col">노출 여부</th></tr>
                 </thead>
