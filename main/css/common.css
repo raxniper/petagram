@@ -71,7 +71,7 @@ DATE : 2020.08.05 ~
   .lh-condensed { line-height: 1.25; }
 
 
-/* shop / shop_1_reservation */
+/* shop / admin_1_reservation */
   /* toggle switch */
     .toggleWrap {float:right;}
     .switchTitle {font-size: 20px; font-weight: 600; margin: 5px 10px 0 0;}
@@ -125,7 +125,12 @@ DATE : 2020.08.05 ~
     .dim-layer .pop-layer .pop-container .pop-conts .pop-close-x .btn-layerClose {font-size: 30px;}
 
 
-/* shop / shop_2_infoModify */
+/* shop / admin_2_infoModify */
   /* h1 ~ h6 reset */
     h1, h2, h3, h4, h5, h6 {display: inline-block; margin: 0;}
     .col-md-2 .btn-sm {height: 38px; padding-top: 8px;}
+
+/* shop / client_1_reservation */
+  /* dropdown */
+  .dropdownLbl {margin-bottom: 0;}
+  .dropdown-menu {min-width: 94%;}
