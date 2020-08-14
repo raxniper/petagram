@@ -13,6 +13,8 @@ DATE : 2020.08.05 ~
 /* body */
   /* common */
   body {padding-top: 56px;}
+  /* join-in */
+  body.joinBody {background-color: #f5f5f5;}
   /* signin, signinOk, login */
   body.signBody {padding-top: 40px; height: 100%; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-bottom: 40px; background-color: #f5f5f5;}
 
