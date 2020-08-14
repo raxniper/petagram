@@ -130,6 +130,7 @@ DATE : 2020.08.05 ~
     h1, h2, h3, h4, h5, h6 {display: inline-block; margin: 0;}
     .col-md-2 .btn-sm {height: 38px; padding-top: 8px;}
 
+
 /* shop / client_1_reservation */
   /* dropdown */
   .btn-dropdown {background-color: #fff; border: 1px solid #CED4DA;}
@@ -146,4 +147,11 @@ DATE : 2020.08.05 ~
   .petLicense > div.petLicenseContents {position: absolute; left: 25%; top: 38%; width: 16%; line-height: 2.0em;}
   .petLicense > div.petLicenseContents label {margin-bottom: 0;}
   .petLicense > div.petLicenseFooter {position: absolute; left: 3%; top: 82%; width: 94%; line-height: 2.0em;}
-  .petLicense > div.petLicenseStamp {position: absolute; left: 56%; top: 82%; width: 7%; font-size: 12px; color: red; font-weight: 800; line-height: 1.0em; border: 2px solid red; border-radius: 20%;  padding: 2px 1px; box-sizing: border-box; opacity: 0.9;}
+  .petLicense > div.petLicenseStamp {position: absolute; left: 56%; top: 82%; width: 7%; min-width: 35px; font-size: 12px; color: red; font-weight: 800; line-height: 1.0em; border: 2px solid red; border-radius: 20%;  padding: 2px 1px; box-sizing: border-box; opacity: 0.9;}
+
+
+/* shop / client_1_price */
+  /* noticeList */
+  .noticeList ul li {list-style-type: square;}
+  /* priceView */
+  .priceView {min-height:800px; border: 1px solid #CED4DA; background-color: #fff; background-image: url(''); background-repeat: no-repeat; background-size: cover;}
