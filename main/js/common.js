@@ -113,10 +113,9 @@
         var $tds = $(this).find('td'),
             $reservCheck = $tds.eq(1).find('input[type=checkbox]'),
             reservTF = $tds.eq(0).text()
-
-            if(reservTF == '불가능'){
-                $reservCheck.attr("disabled", true);
-            }
-        console.log(reservTF);
+        if(reservTF == '불가능'){
+            $reservCheck.attr("disabled", true);
+        }
+        // console.log(reservTF);
     });
 //. checkbox - client_1_reservation
