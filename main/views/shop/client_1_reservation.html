@@ -121,16 +121,16 @@
           <div class="row mb-3">
             <div class="col-md-12">
               <h5 class="mb-2"><b>시간 선택</b></h5>
-              <table class="table table-sm text-center mb-5">
+              <table class="table table-sm text-center mb-3 tbl_client_reservation">
                 <thead>
                   <tr><th scope="col">시 간</th><th scope="col">현 황</th><th scope="col">선 택</th></tr>
                 </thead>
                 <tbody>
-                  <tr><th scope="row">08:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
+                  <tr><th scope="row">08:00</th><td>불가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
                   <tr><th scope="row">09:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
                   <tr><th scope="row">10:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
                   <tr><th scope="row">11:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">12:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
+                  <tr><th scope="row">12:00</th><td>불가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
                   <tr><th scope="row">13:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
                   <tr><th scope="row">14:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
                   <tr><th scope="row">15:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
@@ -154,49 +154,52 @@
                     <h5 class="mb-2"><b>상세 내용</b></h5>
                   </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-3">
                   <div class="col-md-1"></div>
-                  <div class="col-md-2"><h6><b>날  짜</b></h6></div>
+                  <div class="col-md-2 mt-2"><h6><b>날&nbsp;&nbsp;&nbsp;&nbsp;짜</b></h6></div>
                   <div class="col-md-9"><input type="text" id="" class="form-control" required readonly></div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-5">
                   <div class="col-md-1"></div>
-                  <div class="col-md-2"><h6><b>시  간</b></h6></div>
+                  <div class="col-md-2 mt-2"><h6><b>시&nbsp;&nbsp;&nbsp;&nbsp;간</b></h6></div>
                   <div class="col-md-9"><input type="text" id="" class="form-control" required readonly></div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-3">
                   <div class="col-md-1"></div>
-                  <div class="col-md-2"><h6><b>고객명</b></h6></div>
-                  <div class="col-md-9"><input type="text" id="" class="form-control" required autofocus></div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-md-1"></div>
-                  <div class="col-md-2"><h6><b>연락처</b></h6></div>
+                  <div class="col-md-2 mt-2"><h6><b>고객명</b></h6></div>
                   <div class="col-md-9"><input type="text" id="" class="form-control" required></div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-3">
                   <div class="col-md-1"></div>
-                  <div class="col-md-2"><h6><b>펫선택</b></h6></div>
+                  <div class="col-md-2 mt-1"><h6><b>연락처</b></h6></div>
+                  <div class="col-md-9"><input type="text" id="" class="form-control" required></div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-2 mt-1"><h6><b>펫선택</b></h6></div>
                   <div class="col-md-9 btn-group">
-                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><label class="dropdownLbl">예약하실 펫을 선택하세요.</label></button>
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle btn-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">예약하실 펫을 선택하세요.</button>
                     <div class="dropdown-menu dropdown-menu-left">
-                      <button class="dropdown-item" type="button">슈슈</button>
-                      <button class="dropdown-item" type="button">제이</button>
+                      <!-- 아이템추가: .dropdown-mypet-item.html() 변경 -->
+                      <button class="dropdown-item dropdown-mypet-item" type="button">슈슈</button>
+                      <button class="dropdown-item dropdown-mypet-item" type="button">제이</button>
                     </div>
                   </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                   <div class="col-md-1"></div>
-                  <div class="col-md-2"><h6><b>등록증</b></h6></div>
+                  <div class="col-md-2 mt-1"><h6><b>등록증</b></h6></div>
                   <div class="col-md-9 petLicenseWrap">
                     <div class="petLicense rounded-lg">
                       <div class="petLicensePicture"></div>
                       <div class="petLicenseTitle text-center">반려동물 등록증</div>
-                      <div class="petLicenseName text-center">럭키 (lucky)</div>
+                      <!-- 이름변경: .petLicenseTitle.html() 변경 -->
+                      <div class="petLicenseName text-center">럭키</div>
                       <div class="petLicenseSubTitle">종&nbsp;&nbsp;&nbsp;&nbsp;류 :<br>나&nbsp;&nbsp;&nbsp;&nbsp;이 :<br>몸무게 :</div>
-                      <div class="petLicenseContents"><label class="lblKind">시츄</label><br><label class="lblAge">2 세</label><br><label class="lblWeight">3.8 kg</label></div>
+                      <!-- 종류변경: .lblKind.val() 변경 / 나이변경: .lblAge.val() 변경 / 몸무게변경: .lblWeight.val()변경 -->
+                      <div class="petLicenseContents"><label class="lblKind">시츄</label><br><label class="lblAge">2</label> 세<br><label class="lblWeight">3.8</label> kg</div>
                       <div class="petLicenseStamp text-center">페타그램</div>
-                      <div class="petLicenseFooter text-center">페타그램 협회</div>
+                      <div class="petLicenseFooter text-center">페 타 그 램</div>
                     </div>
                   </div>
                 </div>
@@ -208,12 +211,60 @@
       </div>
       <!-- /. 컨텐츠 내용 -->
 
+      <!-- 컨텐츠 마무리 -->
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
       <div class="row mb-5">
         <div class="col-md-8"></div>
-        <div class="col-md-2"><a class="btn btn-primary btn-sm btn-block" href="#" role="button">예 약</a></div>
+        <div class="col-md-2"><a class="btn btn-primary btn-sm btn-block btn-example" href="#layer2" role="button">예 약</a></div>
         <div class="col-md-2"><a class="btn btn-secondary btn-sm btn-block" href="#" role="button">취 소</a></div>
       </div>
-    </div>
+      <!-- /. 컨텐츠 마무리 -->
+
+      <!-- 예약팝업 -->
+      <div class="dim-layer">
+        <div class="dimBg"></div>
+        <div id="layer2" class="pop-layer">
+          <div class="pop-container">
+            <div class="pop-conts">
+                <!-- 예약팝업 : 내용 -->
+                <div class="btn-l">
+                  <h4>예약설정</h4>
+                </div>
+                <div class="pop-close-x">
+                  <a type="button" class="close btn-layerClose" aria-label="Close" href="#"><span aria-hidden="true">&times;</span></a>
+                </div>
+                <table class="table table-sm text-center">
+                  <thead>
+                    <tr><th scope="col">No</th><th scope="col">예약가능시간</th><th scope="col">설정</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">1</th><td>08:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">2</th><td>09:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">3</th><td>10:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">4</th><td>11:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">5</th><td>12:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">6</th><td>13:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">7</th><td>14:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">8</th><td>15:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">9</th><td>16:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">10</th><td>17:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><th scope="row">11</th><td>18:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                  </tbody>
+                </table>
+                <div class="btn-r">
+                  <a class="btn btn-primary btn-sm btn-layerClose" href="#" role="button">확인</a>
+                  <a class="btn btn-secondary btn-sm btn-layerClose" href="#" role="button">닫기</a>
+                </div>
+              <!-- /. 예약팝업 : 내용 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /. 예약팝업 -->
     <!-- /. 컨텐츠 -->
   </main>
 
@@ -234,8 +285,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../../vendor/jquery/jquery.min.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../js/score-star.js"></script>
-  <script src="../../js/pop-up.js"></script>
+  <script src="../../js/common.js"></script>
 </body>
 
 </html>
