@@ -26,7 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="../../image/lettering-bright.png"></a>
+      <a class="navbar-brand" href="#"><img src="../../image/logo/lettering-bright.png"></a>
       <!-- small display : menu button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,21 +66,21 @@
   <!-- main -->
   <main role="main">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- 타이틀 -->
     <div class="jumbotron">
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <img src="../../image/testimg.png" class="rounded-circle btn-block mt-4">
+            <img src="../../image/example/shop-title/title_img.png" class="rounded-circle btn-block mt-4">
           </div>
           <div class="col-md-10">
             <h1 class="display-3 mt-4"><b>매장 이름</b></h1>
-            <!-- <p><b>(Shop Introduce)</b> This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
+            <!-- 타이틀 메뉴 -->
             <div class="mt-4">
               <a class="btn btn-primary btn-lg" href="#" role="button">예약관리 &raquo;</a>
               <a class="btn btn-secondary btn-lg" href="#" role="button">정보수정 &raquo;</a>
               <a class="btn btn-secondary btn-lg" href="#" role="button">페이지 관리 &raquo;</a>
-              <!-- toggle switch -->
+              <!-- 토글 스위치 -->
               <div class="toggleWrap">
                 <label class="switchTitle">검색 노출</label>
                 <label class="switch">
@@ -88,22 +88,35 @@
                   <span class="slider round"></span>
                 </label>
               </div>
+              <!-- /. 토글 스위치 -->
             </div>
+            <!-- /. 타이틀 메뉴 -->
           </div>
         </div>
       </div>
     </div>
+    <!-- /. 타이틀 -->
   
+    <!-- 컨텐츠 -->
     <div class="container">
-      <!-- Example row of columns -->
+
+      <!-- 컨텐츠 묶음 : 캘린더, 매장정보 -->
       <div class="row mb-3">
+
+        <!-- 컨텐츠 내용 : 캘린더 -->
         <div class="col-md-4">
           <h2>캘린더</h2>
           <p>Calander API</p>
         </div>
+        <!-- /. 컨텐츠 내용 : 캘린더 -->
+
+        <!-- 컨텐츠 내용 : 매장 정보 -->
         <div class="col-md-8">
+          
           <h2>샵 이름</h2>
+          
           <p class="mt-1">(매장 소개 간략) 저희 매장은 블라블라 쏼라쏼라 아싸라비아 킹왕짱...</p>
+          
           <!-- 별표 점수매기기 -->
           <span class="star-input">
             <span class="input">
@@ -121,55 +134,69 @@
             <output for="star-input"><b>0</b>점</output>
           </span>
           <!-- /. 별표 점수매기기 -->
+          
           <h6 class="reviewTitle">리뷰 51개 | 1개월 | 3개월 | 6개월</h6>
+          
+          <!-- 예약설정 버튼 -->
           <p><a class="btn btn-secondary btn-example" href="#layer2" role="button">예약설정 &raquo;</a></p>
-          <!-- 예약팝업 -->
+          <!-- /. 예약설정 버튼 -->
+
+          <!-- 예약설정 -->
           <div class="dim-layer">
             <div class="dimBg"></div>
             <div id="layer2" class="pop-layer">
               <div class="pop-container">
                 <div class="pop-conts">
-                    <!-- 예약팝업 : 내용 -->
-                    <div class="btn-l">
-                      <h4>예약설정</h4>
-                    </div>
-                    <div class="pop-close-x">
-                      <a type="button" class="close btn-layerClose" aria-label="Close" href="#"><span aria-hidden="true">&times;</span></a>
-                    </div>
-                    <table class="table table-sm text-center">
-                      <thead>
-                        <tr><th scope="col">No</th><th scope="col">예약가능시간</th><th scope="col">설정</th></tr>
-                      </thead>
-                      <tbody>
-                        <tr><th scope="row">1</th><td>08:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">2</th><td>09:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">3</th><td>10:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">4</th><td>11:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">5</th><td>12:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">6</th><td>13:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">7</th><td>14:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">8</th><td>15:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">9</th><td>16:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">10</th><td>17:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                        <tr><th scope="row">11</th><td>18:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      </tbody>
-                    </table>
-                    <div class="btn-r">
-                      <a class="btn btn-primary btn-sm btn-layerClose" href="#" role="button">확인</a>
-                      <a class="btn btn-secondary btn-sm btn-layerClose" href="#" role="button">닫기</a>
-                    </div>
-                  <!-- /. 예약팝업 : 내용 -->
+                  <!-- 예약팝업 -->
+                  <div class="btn-l">
+                    <h4>예약설정</h4>
+                  </div>
+                  <div class="pop-close-x">
+                    <a type="button" class="close btn-layerClose" aria-label="Close" href="#"><span aria-hidden="true">&times;</span></a>
+                  </div>
+                  <table class="table table-sm text-center">
+                    <thead>
+                      <tr><th scope="col">No</th><th scope="col">예약가능시간</th><th scope="col">설정</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">1</th><td>08:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">2</th><td>09:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">3</th><td>10:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">4</th><td>11:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">5</th><td>12:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">6</th><td>13:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">7</th><td>14:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">8</th><td>15:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">9</th><td>16:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">10</th><td>17:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">11</th><td>18:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                      <tr><th scope="row">12</th><td>19:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    </tbody>
+                  </table>
+                  <div class="btn-r">
+                    <a class="btn btn-primary btn-sm btn-layerClose" href="#" role="button">확인</a>
+                    <a class="btn btn-secondary btn-sm btn-layerClose" href="#" role="button">닫기</a>
+                  </div>
+                  <!-- /. 예약팝업 -->
                 </div>
               </div>
             </div>
           </div>
-          <!-- /. 예약팝업 -->
-        </div>
-      </div>
+          <!-- /. 예약설정 -->
 
+        </div>
+        <!-- /. 컨텐츠 내용 : 매장 정보 -->
+
+      </div>
+      <!-- /. 컨텐츠 묶음 : 캘린더, 매장정보 -->
+
+      <!-- 컨텐츠 묶음 : 예약 내역 -->
       <div class="row mb-5">
+
+        <!-- 컨텐츠 내용 : 예약 내역 -->
         <div class="col-md-12">
           <h2 class="mb-3">예약 내역</h2>
+          
           <table class="table table-hover text-center">
             <thead>
               <tr><th scope="col">No</th><th scope="col">고 객 명</th><th scope="col">날 짜</th><th scope="col">시간대</th></tr>
@@ -182,11 +209,18 @@
               <tr><th scope="row">5</th><td>박명수</td><td>2020년 08월 12일</td><td>17:00 ~ 18:00</td></tr>
             </tbody>
           </table>
+
         </div>
+        <!-- /. 컨텐츠 내용 : 예약 내역 -->
+
       </div>
+      <!-- /. 컨텐츠 묶음 : 예약 내역 -->
+
     </div>
-    <!-- /container -->
+    <!-- /. 컨텐츠 -->
+
   </main>
+  <!-- /. main -->
 
 
 
@@ -194,7 +228,7 @@
   <footer class="bg-dark">
     <div class="container">
       <p class="m-0 text-left text-white">
-        <a class="navbar-brand" href="#"><img src="../../image/lettering-bright.png"></a><br><br>
+        <a class="navbar-brand" href="#"><img src="../../image/logo/lettering-bright.png"></a><br><br>
         <b>페타그램</b>&nbsp;&nbsp;&nbsp;서울특별시 서초구 서초대로 77길 13 401호<br>
         <b>대표이사</b> : 풀스택A팀&nbsp;&nbsp;&nbsp;<b>사업자등록번호</b> : 000-00-00000&nbsp;&nbsp;&nbsp;<b>고객센터</b> : 02-000-0000&nbsp;&nbsp;&nbsp;<b>이메일</b> : help@petagram.com
       </p>
