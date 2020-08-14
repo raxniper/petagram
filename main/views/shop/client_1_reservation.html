@@ -75,18 +75,8 @@
           </div>
           <div class="col-md-10">
             <h1 class="display-3 mt-4"><b>매장 이름</b></h1>
-            <div class="mt-4">
-              <a class="btn btn-secondary btn-lg" href="#" role="button">예약관리 &raquo;</a>
-              <a class="btn btn-primary btn-lg" href="#" role="button">정보수정 &raquo;</a>
-              <a class="btn btn-secondary btn-lg" href="#" role="button">페이지 관리 &raquo;</a>
-              <!-- 토글 스위치 -->
-              <div class="toggleWrap">
-                <label class="switchTitle">검색 노출</label>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </div>
+            <div class="mt-2">
+              <b>(매장 간략 소개글)</b> 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치...
             </div>
           </div>
         </div>
@@ -203,6 +193,10 @@
                     </div>
                   </div>
                 </div>
+                <div class="row mb-3">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-9 mt-5 text-center text-primary"><h6><b>예약이 완료되었습니다.</b></h6></div>
+                </div>
               </div>
               
             </div>
@@ -224,47 +218,92 @@
       </div>
       <!-- /. 컨텐츠 마무리 -->
 
-      <!-- 예약팝업 -->
+      <!-- 예약확인 팝업 -->
       <div class="dim-layer">
         <div class="dimBg"></div>
         <div id="layer2" class="pop-layer">
           <div class="pop-container">
             <div class="pop-conts">
-                <!-- 예약팝업 : 내용 -->
+                <!-- 예약확인 팝업 : 내용 -->
                 <div class="btn-l">
-                  <h4>예약설정</h4>
+                  <h4>예약확인</h4>
                 </div>
+                <!-- -- -->
                 <div class="pop-close-x">
                   <a type="button" class="close btn-layerClose" aria-label="Close" href="#"><span aria-hidden="true">&times;</span></a>
                 </div>
-                <table class="table table-sm text-center">
+                <!-- -- -->
+                <table class="table table-sm">
+                  <colgroup>
+                    <col width="27%">
+                    <col width="73%".
+                  </colgroup>
                   <thead>
-                    <tr><th scope="col">No</th><th scope="col">예약가능시간</th><th scope="col">설정</th></tr>
+                    <tr class="table-primary"><th scope="col" colspan="3">매장 정보</th></tr>
                   </thead>
                   <tbody>
-                    <tr><th scope="row">1</th><td>08:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">2</th><td>09:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">3</th><td>10:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">4</th><td>11:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">5</th><td>12:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">6</th><td>13:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">7</th><td>14:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">8</th><td>15:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">9</th><td>16:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">10</th><td>17:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    <tr><th scope="row">11</th><td>18:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                    <tr><td scope="row" class="text-center">매장이름 :</td><td colspan="2">모모샵</td></tr>
+                    <tr><td scope="row" class="text-center">매장번호 :</td><td colspan="2">02 - 312 - 3333</td></tr>
+                    <tr><td scope="row" class="text-center">매장주소 :</td><td colspan="2">서울특별시 서초구 모모동</td></tr>
                   </tbody>
                 </table>
+                <!-- -- -->
+                <table class="table table-sm">
+                  <colgroup>
+                    <col width="27%">
+                    <col width="73%".
+                  </colgroup>
+                  <thead>
+                    <tr class="table-primary"><th scope="col" colspan="3">예약 정보</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td scope="row" class="text-center">예약날짜 :</td><td colspan="2">2020 / 08 / 29</td></tr>
+                    <tr><td scope="row" class="text-center">예약시간 :</td><td colspan="2">11:00</td></tr>
+                  </tbody>
+                </table>
+                <!-- -- -->
+                <table class="table table-sm">
+                  <colgroup>
+                    <col width="27%">
+                    <col width="73%".
+                  </colgroup>
+                  <thead>
+                    <tr class="table-primary"><th scope="col" colspan="3">고객 정보</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td scope="row" class="text-center">고객성명 :</td><td colspan="2">홍길동</td></tr>
+                    <tr><td scope="row" class="text-center">연 락 처 :</td><td colspan="2">010 - 1111 - 1111</td></tr>
+                    <tr><td scope="row" class="text-center">고객주소 :</td><td colspan="2">서울특별시 강남구 하하동</td></tr>
+                  </tbody>
+                </table>
+                <!-- -- -->
+                <table class="table table-sm">
+                  <colgroup>
+                    <col width="27%">
+                    <col width="73%".
+                  </colgroup>
+                  <thead>
+                    <tr class="table-primary"><th scope="col" colspan="3">반려동물 정보</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td scope="row" class="text-center">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 :</td><td colspan="2">호두</td></tr>
+                    <tr><td scope="row" class="text-center">종&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;류 :</td><td colspan="2">푸들</td></tr>
+                    <tr><td scope="row" class="text-center">나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이 :</td><td colspan="2">2 세</td></tr>
+                    <tr><td scope="row" class="text-center">몸 무 게 :</td><td colspan="2">8.2 kg</td></tr>
+                  </tbody>
+                </table>
+                <!-- -- -->
                 <div class="btn-r">
-                  <a class="btn btn-primary btn-sm btn-layerClose" href="#" role="button">확인</a>
-                  <a class="btn btn-secondary btn-sm btn-layerClose" href="#" role="button">닫기</a>
+                  <a class="btn btn-primary btn-sm btn-layerClose" href="#" role="button">예약 확정</a>
+                  <a class="btn btn-secondary btn-sm btn-layerClose" href="#" role="button">다시 작성</a>
                 </div>
-              <!-- /. 예약팝업 : 내용 -->
+              <!-- /. 예약확인 팝업 : 내용 -->
             </div>
           </div>
         </div>
       </div>
-      <!-- /. 예약팝업 -->
+      <!-- /. 예약확인 팝업 -->
+
     <!-- /. 컨텐츠 -->
   </main>
 
