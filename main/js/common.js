@@ -20,6 +20,20 @@
     }())
 //. main page : aside
 
+// join-in.html
+    $("#chkboxAll").change(function(){
+        var chkbox1st = $(this).parent('label').parent('div').parent('div').next('div').children('div').next('div').find('label');
+        var chkbox2rd
+        var chkbox3th
+        if($("#chkboxAll").is(":checked")){
+            // alert("체크박스 체크했음!");
+            console.log(chkbox1st.val());
+        }else{
+            // alert("체크박스 체크 해제!");
+        }
+    });
+//. join-in.html
+
 // pop - up
     $('.btn-example').click(function(){
         var $href = $(this).attr('href');

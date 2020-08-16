@@ -21,45 +21,84 @@
 <body class="joinBody">
 
   <div class="container">
+
+    <!-- 로고 -->
     <div class="row mt-5 text-center">
       <div class="col-md-3"></div>
       <div class="col-md-6"><img class="signinLogo mb-5" src="../../image/logo/lettering-dark.png" alt="" width="200"></div>
       <div class="col-md-3"></div>
     </div>
     
+    <!-- 아이디 -->
+    <div class="row mt-2 text-left"><div class="col-md-4"></div><div class="col-md-4 px-1"><label class="my-0 font-weight-bold">아이디</label></div><div class="col-md-4"></div></div>
     <div class="row mt-2 text-center">
       <div class="col-md-4"></div>
       <div class="col-md-3 px-1"><input type="id" id="" name="" class="form-control" placeholder="아이디를 입력해주세요." autofocus></div>
       <div class="col-md-1 px-1"><button class="btn btn-primary btn-block px-0" type="button">중복확인</button></div>
-      <div class="col-md-4"></div>
+      <!-- <div class="col-md-4 text-left"><label class="text-danger my-0 pt-2" style="font-size: 12px;">중복된 아이디입니다.</label></div> -->
     </div>
-    <!-- <div class="row my-0 text-left"><div class="col-md-4"></div><div class="col-md-4 px-3"><label class="text-danger" style="font-size: 12px;">중복된 아이디입니다.</label></div><div class="col-md-4"></div></div> -->
     
+    <!-- 비밀번호 -->
+    <div class="row mt-3 text-left"><div class="col-md-4"></div><div class="col-md-4 px-1"><label class="my-0 font-weight-bold">비밀번호</label></div><div class="col-md-4"></div></div>
     <div class="row mt-2 text-center">
       <div class="col-md-4"></div>
       <div class="col-md-4 px-1"><input type="password" id="" name="" class="form-control" placeholder="비밀번호를 입력해주세요. (8자 이상)"></div>
-      <div class="col-md-4"></div>
+      <!-- <div class="col-md-4 text-left"><label class="text-danger my-0 pt-2" style="font-size: 12px;">8 글자 이상 입력해주세요.</label></div> -->
     </div>
-    <!-- <div class="row my-0 text-left"><div class="col-md-4"></div><div class="col-md-4 px-3"><label class="text-danger" style="font-size: 12px;">8 글자 이상 입력해주세요.</label></div><div class="col-md-4"></div></div> -->
 
+    <!-- 비밀번호 확인란 -->
     <div class="row mt-2 text-center">
       <div class="col-md-4"></div>
       <div class="col-md-4 px-1"><input type="password" id="" name="" class="form-control" placeholder="비밀번호를 한번 더 입력해주세요." onkeyup=""></div>
-      <div class="col-md-4"></div>
+      <!-- <div class="col-md-4 text-left"><label class="text-danger my-0 pt-2" style="font-size: 12px;">비밀번호가 일치하지 않습니다.</label></div> -->
     </div>
-    <!-- <div class="row my-0 text-left"><div class="col-md-4"></div><div class="col-md-4 px-3"><label class="text-danger" style="font-size: 12px;">비밀번호가 일치하지 않습니다.</label></div><div class="col-md-4"></div></div> -->
 
+    <!-- 세부정보 (성함) -->
+    <div class="row mt-3 text-left"><div class="col-md-4"></div><div class="col-md-4 px-1"><label class="my-0 font-weight-bold">세부정보</label></div><div class="col-md-4"></div></div>
     <div class="row mt-2 text-center">
       <div class="col-md-4"></div>
       <div class="col-md-4 px-1"><input type="text" id="" name="" class="form-control" placeholder="성함을 입력해주세요."></div>
+      <!-- <div class="col-md-4 text-left"><label class="text-danger my-0 pt-2" style="font-size: 12px;">필수 입력사항입니다.</label></div> -->
+    </div>
+
+    <!-- 세부정보 (연락처) -->
+    <div class="row mt-2 text-center">
       <div class="col-md-4"></div>
+      <div class="col-md-4 px-1"><input type="text" id="" name="" class="form-control" placeholder="연락처를 입력해주세요. ( - 포함)"></div>
+      <!-- <div class="col-md-4 text-left"><label class="text-danger my-0 pt-2" style="font-size: 12px;">필수 입력사항입니다.</label></div> -->
+    </div>
+
+    <!-- 약관동의 (전체) -->
+    <div class="row mt-3 text-left"><div class="col-md-4"></div><div class="col-md-4 px-1"><label class="my-0 font-weight-bold">약관동의</label></div><div class="col-md-4"></div></div>
+    <div class="row mt-2 text-left">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 px-1">
+        <label class="my-0 font-weight-bold" for="chkboxAll"><input type="checkbox" aria-label="Checkbox for following text input" name="chkboxAll" id="chkboxAll" class="mr-2">모두 동의합니다.</label><hr class="my-1">
+      </div>
+      <div class="col-md-4 text-left"></label></div>
+    </div>
+
+    <!-- 약관동의 (자세히) -->
+    <div class="row mt-1 text-left">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 px-1">
+        <label class="my-0 font-weight-bold" style="font-size: 13px;" for="chkbox1st"><input type="checkbox" aria-label="Checkbox for following text input" name="chkbox1st" id="chkbox1st" class="mr-2">만 14세 이상입니다. <span class="text-danger">(필수)</span></label><br>
+        <label class="my-0 font-weight-bold" style="font-size: 13px;" for="chkbox2nd"><input type="checkbox" aria-label="Checkbox for following text input" name="chkbox2nd" id="chkbox2nd" class="mr-2"><a href="#"></a>서비스 이용약관</a>에 동의합니다. <span class="text-danger">(필수)</span></label><br>
+        <label class="my-0 font-weight-bold" style="font-size: 13px;" for="chkbox3th"><input type="checkbox" aria-label="Checkbox for following text input" name="chkbox3th" id="chkbox3th" class="mr-2"><a href="#"></a>개인정보 수집ㆍ이용</a>에 동의합니다. <span class="text-danger">(필수)</span></label><br>
+      </div>
+      <div class="col-md-4 text-left"></label>
+        <!-- <label class="text-danger my-0" style="font-size: 12px;">필수 선택사항입니다.</label><br> -->
+        <!-- <label class="text-danger my-0" style="font-size: 12px;">필수 선택사항입니다.</label><br> -->
+        <!-- <label class="text-danger my-0" style="font-size: 12px;">필수 선택사항입니다.</label><br> -->
+      </div>
     </div>
 
     <div class="row mt-2 text-center">
       <div class="col-md-4"></div>
-      <div class="col-md-4 px-1"><input type="text" id="" name="" class="form-control" placeholder="연락처를 입력해주세요. ( - 포함)"></div>
-      <div class="col-md-4"></div>
+      <div class="col-md-4 px-1"><button class="btn btn-lg btn-primary btn-block mt-5" type="submit">가입하기</button></div>
+      <div class="col-md-4 text-left"></div>
     </div>
+
   </div>
 
   <!-- Bootstrap core JavaScript -->
