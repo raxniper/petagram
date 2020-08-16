@@ -27,7 +27,6 @@
         var chkbox3th
         if($("#chkboxAll").is(":checked")){
             // alert("체크박스 체크했음!");
-            console.log(chkbox1st.val());
         }else{
             // alert("체크박스 체크 해제!");
         }
