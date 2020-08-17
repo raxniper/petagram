@@ -22,11 +22,14 @@ DATE : 2020.08.05 ~
   a {color: #000;}
   a:hover {color: #0056b3;}
 
-/* sub nav */
 
 /* Navigation */
   /* Logo */
   a.navbar-brand > img {width:110px; margin-right:30px;}
+
+
+/* left-navi */
+  .left-navi > li:hover {background-color: #f8f9fa;}
 
 
 /* table */
@@ -37,7 +40,7 @@ DATE : 2020.08.05 ~
   /* Logo */
   footer > div > p > a > img {width:80px;}
   /* Padding up, down */
-  footer > div > p {padding: 30px 0 40px 0; line-height: 30px;}
+  footer > div > p {line-height: 30px;}
 
 
 /* log-in */
@@ -49,33 +52,6 @@ DATE : 2020.08.05 ~
   /* input */
   div.container > .form-login > input[type="id"] {margin-bottom: -1px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;}
   div.container > .form-login > input[type="password"] {margin-bottom: 10px; border-top-left-radius: 0; border-top-right-radius: 0;}
-
-
-/* sign-in */
-  /* form */
-  div.container > form.form-signin {width: 100%; max-width: 500px; padding: 15px;  margin: auto;}
-  /* Danger */
-  div.container > form.form-signin > p.txtDanger {font-size: 12px; padding-left: 5px;}
-  div.container > form.form-signin > p.dangerIdRule,
-  div.container > form.form-signin > p.dangerIdNo,
-  div.container > form.form-signin > p.dangerPwRule,
-  div.container > form.form-signin > p.dangerPwReNo,
-  div.container > form.form-signin > p.dangerNameNo,
-  div.container > form.form-signin > p.dangerPhoneNo,
-  div.container > form.form-signin > p.dangerEmailNo {visibility: hidden; color: red; margin-bottom: 5px;}
-  div.container > form.form-signin > p.dangerIdOk {visibility: hidden; margin-bottom: 5px;}
-
-
-/* sign-in-ok */
-  /* label */
-  div.container > form.form-login > div.divWelcome {margin-top: 30px;}
-  /* button */
-  div.container > form.form-login > button.btnSigninOk {margin-top: 40px;}
-
-
-/* main-aside */
-  /* ? */
-  .lh-condensed { line-height: 1.25; }
 
 
 /* shop / admin_1_reservation */
