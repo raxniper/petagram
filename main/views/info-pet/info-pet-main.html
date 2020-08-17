@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>패타그램 - 메인 + 어사이드</title>
+  <title>패타그램 - 펫 관리</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
 <body class="bg-light">
 
-  <!-- 헤더 네비 -->
+  <!-- 헤더 네비 (고객 전용) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <!-- 로고 -->
@@ -29,17 +29,15 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <!-- 메인 네비 -->
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">공지사항</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">가격표</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">사진첩</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">애견용품</a></li>
-          <li class="nav-item active"><a class="nav-link" href="#">예약하기</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">매장찾기</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">자랑하기</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">커뮤니티</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">고객센터</a></li>
         </ul>
 
         <!-- 회원 네비 -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="#">홍길동님</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">매장관리</a></li>
           <li class="nav-item"><a class="nav-link" href="#">펫 관리</a></li>
           <li class="nav-item"><a class="nav-link" href="#">회원정보</a></li>
           <li class="nav-item"><a class="nav-link" href="#">로그아웃</a></li>
@@ -48,7 +46,7 @@
       </div>
     </div>
   </nav>
-  <!-- 헤더 네비 -->
+  <!-- 헤더 네비 (고객 전용) -->
 
   
   <!-- 컨텐츠 -->
@@ -56,12 +54,10 @@
     <!-- 컨텐츠 헤더 -->
     <div class="row py-5">
       <!-- 타이틀 -->
-      <div class="col-md-2 text-left"><h2>타이틀</h2></div>
+      <div class="col-md-2 text-left"><h2>펫 관리</h2></div>
       <!-- 네비 -->
       <div class="col-md-10 text-right pt-2" style="font-size: 14px;">
-        <a href="#">타이틀</a>
-         > 
-        <a href="#">섭 타이틀</a>
+        <a href="#">펫 관리</a>
       </div>
     </div>
     <!-- /. 컨텐츠 헤더 -->
@@ -80,10 +76,67 @@
 
       <!-- 컨텐츠 메인 -->
       <div class="col-md-10 order-md-2">
-        <div class="row ml-3">
+        <div class="row ml-3 mb-5">
+          <div class="col-md-12">
 
-          
+            <!-- 펫 목록 (슬라이더) -->
+            <h4 class="mb-3">펫 목록</h4>
+            <div class="border bg-white" style="height: 300px;">펫 등록증 슬라이더 영역 (예정)</div>
+            <!-- /. 펫 목록 (슬라이더) -->
 
+            <!-- 매장 이용내역 -->
+            <h4 class="mt-5 mb-3">매장 이용내역</h4>
+            <table class="table table-hover text-center bg-white">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">이용날짜</th>
+                  <th scope="col">매장명</th>
+                  <th scope="col">펫이름</th>
+                  <th scope="col">몸무게 (kg)</th>
+                  <th scope="col">예약현황</th>
+                  <th scope="col">리뷰</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">1</th><td>2020-03-19</td><td>개님살롱</td><td>호두</td><td>4.5</td><td>완료</td><td>미작성</td></tr>
+                <tr><th scope="row">2</th><td>2020-04-26</td><td>개님살롱</td><td>호두</td><td>4.3</td><td>완료</td><td>미작성</td></tr>
+                <tr><th scope="row">3</th><td>2020-05-15</td><td>개님살롱</td><td>호두</td><td>4.7</td><td>완료</td><td>미작성</td></tr>
+                <tr><th scope="row">4</th><td>2020-06-20</td><td>개님살롱</td><td>호두</td><td>5.1</td><td>완료</td><td>미작성</td></tr>
+                <tr><th scope="row">5</th><td>2020-07-24</td><td>개님살롱</td><td>호두</td><td>5.4</td><td>완료</td><td>작성완료</td></tr>
+              </tbody>
+            </table>
+            <!-- /. 매장 이용내역 -->
+
+            <!-- 자랑하기 내역 -->
+            <h4 class="mt-5 mb-3">자랑하기 내역</h4>
+            <table class="table table-hover text-center bg-white">
+              <colgroup>
+                <col width="10%">
+                <col width="60%">
+                <col width="15%">
+                <col width="15%">
+                </con>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">날짜</th>
+                  <th scope="col">작성자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">1</th><td class="px-5 text-left">울호두 쏼라쏼라</td><td>2020-03-19</td><td>하이님</td></tr>
+                <tr><th scope="row">2</th><td class="px-5 text-left">울호두 쏼라쏼라</td><td>2020-03-19</td><td>하이님</td></tr>
+                <tr><th scope="row">3</th><td class="px-5 text-left">울호두 쏼라쏼라</td><td>2020-03-19</td><td>하이님</td></tr>
+                <tr><th scope="row">4</th><td class="px-5 text-left">울호두 쏼라쏼라</td><td>2020-03-19</td><td>하이님</td></tr>
+                <tr><th scope="row">5</th><td class="px-5 text-left">울호두 쏼라쏼라</td><td>2020-03-19</td><td>하이님</td></tr>
+              </tbody>
+            </table>
+            <!-- /. 매장 이용내역 -->
+
+          </div>
         </div>
       </div>
       <!-- /. 컨텐츠 메인 -->
