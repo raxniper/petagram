@@ -79,69 +79,39 @@
     <!-- 컨텐츠 -->
     <div class="container">
       
-      <!-- 컨텐츠 제목 -->
+      <!-- 컨텐츠 제목 : 지도 -->
       <div class="row mb-4">
-        <div class="col-md-5"><h2>공지사항</h2></div>
-        <div class="col-md-3"></div>
-        <div class="col-md-3 pl-0 pr-0">
-          <input class="form-control mr-sm-4" type="text" placeholder="Search" aria-label="Search">
-        </div>
-        <div class="col-md-1 pl-1 pr-3">
-          <button class="btn btn-primary my-2 my-sm-0 btn-block" type="submit">검 색</button>
-        </div>
+        <div class="col-md-12"><h2>찾아오시는 길</h2></div>
       </div>
-      <!-- /. 컨텐츠 제목 -->
+      <!-- /. 컨텐츠 제목 : 지도 -->
 
-      <!-- 컨텐츠 내용 -->
+      <!-- 컨텐츠 내용 : 지도 -->
       <div class="row mb-5">
         <div class="col-md-12">
-          <!-- 공지사항 -->
-          <div class="row mb-2">
-            <div class="col-md-12">
-              <table class="table text-center">
-                <colgroup>
-                  <col width="5%">
-                  <col width="60%">
-                  <col width="15%">
-                  <col width="10%">
-                  <col width="10%">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">날짜</th>
-                    <th scope="col">작성자</th>
-                    <th scope="col">조회수</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">2</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">3</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">4</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">5</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">6</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">7</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">8</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">9</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                    <th scope="row">10</th><td class="text-left px-5"><a href="#">쏼라쏼라</a></td><td>2020-08-03</td><td>운영자</td><td>20</td></tr>
-                </tbody>
-              </table>
-            </div>
+          <!-- api 대체할 div영역 -->
+          <div class="border bg-white" style="height: 400px">
+            map api
           </div>
-          <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-7 text-center">
-              &lt; 1 2 3 4 5 &gt;
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-1 pl-0 pr-3">
-              <button class="btn btn-primary my-2 my-sm-0 btn-block" type="button">글작성</button>
-            </div>
-          </div>
-      <!-- /. 컨텐츠 내용 -->
+          <!-- /. api 대체할 div영역 -->
+        </div>
+      </div>
+      <!-- /. 컨텐츠 내용 : 지도 -->
+
+      <!-- 컨텐츠 제목 : 설명 -->
+      <div class="row mb-4">
+        <div class="col-md-12"><h2>설 명</h2></div>
+      </div>
+      <!-- /. 컨텐츠 제목 : 설명 -->
+
+      <!-- 컨텐츠 내용 : 지도 -->
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <!-- api 대체할 div영역 -->
+          <textarea class="form-control" rows="15"></textarea>
+          <!-- /. api 대체할 div영역 -->
+        </div>
+      </div>
+      <!-- /. 컨텐츠 내용 : 지도 -->
 
       <!-- 컨텐츠 제목 (관리자) -->
       <div class="row mb-3 mt-5">
@@ -154,19 +124,11 @@
       <!-- 컨텐츠 내용 (관리자) -->
       <div class="row">
         <div class="col-md-12">
-          <!-- 공지사항 제목 입력 -->
+          
+          <!-- 설명 입력 -->
           <div class="row mb-3">
             <div class="col-md-1 pt-3">
-              <h6><b>제 목</b></h6>
-            </div>
-            <div class="col-md-11">
-              <input type="text" id="" name="" class="form-control" placeholder="제목을 입력해주세요.">
-            </div>
-          </div>
-          <!-- 공지사항 내용 입력 -->
-          <div class="row mb-3">
-            <div class="col-md-1 pt-3">
-              <h6><b>내 용</b></h6>
+              <h6><b>설 명</b></h6>
             </div>
             <div class="col-md-11">
               <textarea class="form-control border" rows="10" placeholder="내용을 입력해주세요."></textarea>
