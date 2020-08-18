@@ -133,7 +133,7 @@ DATE : 2020.08.05 ~
   /* .petLicense > div {background-color: red; border: 1px solid black;} */
   .petLicense > div.petLicensePicture {position: absolute; left: 64%; top: 5%; width: 30%; height: 180px; border: none; background-color: #CED4DA; background-image: url('../image/example/profile/profile_pet.jpg'); background-repeat: no-repeat; background-size: cover;}
   .petLicense > div.petLicenseTitle {position: absolute; left: 4%; top: 5%; width: 56%; font-weight: 600; font-size: 14px;}
-  .petLicense > div.petLicenseName {position: absolute; left: 4%; top: 20%; width: 56%; font-weight: 600; font-size: 20px; letter-spacing: 0.6em;}
+  .petLicense > div.petLicenseName {position: absolute; left: 4%; top: 20%; width: 56%; font-weight: 600; font-size: 20px; letter-spacing: 0.2em;}
   .petLicense > div.petLicenseSubTitle {position: absolute; left: 10%; top: 38%; width: 14%; font-weight: 600; line-height: 2.0em;}
   .petLicense > div.petLicenseContents {position: absolute; left: 25%; top: 38%; width: 16%; line-height: 2.0em;}
   .petLicense > div.petLicenseContents label {margin-bottom: 0;}

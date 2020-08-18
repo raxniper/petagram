@@ -107,13 +107,14 @@
 //. score star
 
 
-// drop down
+// drop down - client_6_reservation
+    var lblName = $('.lblName')
     $('.dropdown-mypet-item').click(function(){
         var mypetName = $(this).html();
-        // console.log(mypetName);
         $(this).parents('div').prev('button').html(mypetName);
+        lblName.text(mypetName);
     });
-//. drop down
+//. drop down - client_6_reservation
 
 
 // radio : able / disable - client_6_reservation
