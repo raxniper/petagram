@@ -116,7 +116,7 @@
 //. drop down
 
 
-// checkbox - client_1_reservation
+// radio : able / disable - client_6_reservation
     // disabled 처리 - $("#txtBox").attr("disabled",true);
     // disabled 삭제 - $("#txtBox").removeAttr("disabled");
 
@@ -124,11 +124,30 @@
 
     table.find('tr').each(function (i) {
         var $tds = $(this).find('td'),
-            $reservCheck = $tds.eq(1).find('input[type=checkbox]'),
+            $reservCheck = $tds.eq(1).find('input[type=radio]'),
             reservTF = $tds.eq(0).text()
         if(reservTF == '불가능'){
             $reservCheck.attr("disabled", true);
         }
-        // console.log(reservTF);
     });
-//. checkbox - client_1_reservation
+//. radio : able / disable - client_6_reservation
+
+
+// radio : get time value - client_6_reservation
+    var timeResult = $('#timeResult');
+    $('input:radio[name=timeRadio]').click(function(){
+        var radioVal = $(this).val();
+        timeResult.val(radioVal);
+    });
+//. radio : get time value - client_6_reservation
+
+
+// calender - client_6_reservation.form
+        var dateResult = $('#dateResult');
+        $("#date1").datepicker({
+            onSelect: function(){
+                var date = $.datepicker.formatDate("yy-mm-dd", $("#date1").datepicker("getDate"));
+                dateResult.val(date);
+            }
+        });
+//. calender - client_6_reservation.form

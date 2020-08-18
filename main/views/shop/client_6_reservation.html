@@ -13,11 +13,14 @@
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Jquery Modal CSS -->
+  <link href="../../vendor/jquery/jquery.modal.css" rel="stylesheet">
+
+  <!-- Jquery UI CSS -->
+  <link href="../../vendor/jquery/jquery-ui.min.css" rel="stylesheet">
+
   <!-- Custom Common CSS -->
   <link href="../../css/common.css" rel="stylesheet">
-
-  <!-- Jquery Modal CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" rel="stylesheet">
 
 </head> 
 
@@ -96,7 +99,9 @@
           <div class="row mb-5">
             <div class="col-md-12">
               <h5 class="mb-2"><b>날짜 선택</b></h5>
-              <img src="../../image/example/testCal.png" class="btn-block">
+              <!-- 달럭 라이브러리 들어간 부분 -->
+              <div id="date1"></div>
+              <!-- /. 달럭 라이브러리 들어간 부분 -->
             </div>
           </div>
           <!-- 시간표 -->
@@ -108,17 +113,17 @@
                   <tr><th scope="col">시 간</th><th scope="col">현 황</th><th scope="col">선 택</th></tr>
                 </thead>
                 <tbody>
-                  <tr><th scope="row">08:00</th><td>불가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">09:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">10:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">11:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">12:00</th><td>불가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">13:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">14:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">15:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">16:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">17:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
-                  <tr><th scope="row">18:00</th><td>가능</td><td><input type="checkbox" aria-label="Checkbox for following text input"></td></tr>
+                  <tr><th scope="row">08:00</th><td>불가능</td><td><input type="radio" name="timeRadio" value="08:00"></td></tr>
+                  <tr><th scope="row">09:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="09:00"></td></tr>
+                  <tr><th scope="row">10:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="10:00"></td></tr>
+                  <tr><th scope="row">11:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="11:00"></td></tr>
+                  <tr><th scope="row">12:00</th><td>불가능</td><td><input type="radio" name="timeRadio" value="12:00"></td></tr>
+                  <tr><th scope="row">13:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="13:00"></td></tr>
+                  <tr><th scope="row">14:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="14:00"></td></tr>
+                  <tr><th scope="row">15:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="15:00"></td></tr>
+                  <tr><th scope="row">16:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="16:00"></td></tr>
+                  <tr><th scope="row">17:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="17:00"></td></tr>
+                  <tr><th scope="row">18:00</th><td>가능</td><td><input type="radio" name="timeRadio" value="18:00"></td></tr>
                 </tbody>
               </table>
             </div>
@@ -139,12 +144,12 @@
                 <div class="row mb-3">
                   <div class="col-md-1"></div>
                   <div class="col-md-2 mt-2"><h6><b>날&nbsp;&nbsp;&nbsp;&nbsp;짜</b></h6></div>
-                  <div class="col-md-9"><input type="text" id="" class="form-control" required readonly></div>
+                  <div class="col-md-9"><input type="text" id="dateResult" class="form-control" required readonly></div>
                 </div>
                 <div class="row mb-5">
                   <div class="col-md-1"></div>
                   <div class="col-md-2 mt-2"><h6><b>시&nbsp;&nbsp;&nbsp;&nbsp;간</b></h6></div>
-                  <div class="col-md-9"><input type="text" id="" class="form-control" required readonly></div>
+                  <div class="col-md-9"><input type="text" id="timeResult" class="form-control" required readonly></div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-1"></div>
@@ -315,7 +320,28 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../../vendor/jquery/jquery.min.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Jquery UI javaScript -->
+  <script src="../../vendor/jquery/jquery-ui.min.js"></script>
+  <script src="../../vendor/jquery/datepicker-ko.js"></script>
+
+  <!-- custom javascript -->
   <script src="../../js/common.js"></script>
+
+  <!-- Jquery UI datePicker javascript -->
+  <!-- <script type="text/javascript">
+    $(function(){
+      var date2 = $('#date2');
+      console.log(date2);
+    
+      $("#date1").datepicker({
+        onSelect: function(){
+          var date = $.datepicker.formatDate("yy-mm-dd", $("#date1").datepicker("getDate"));
+          date2.val(date);
+        }
+      });
+    });
+  </script> -->
 </body>
 
 </html>
