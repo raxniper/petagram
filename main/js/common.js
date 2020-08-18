@@ -142,12 +142,23 @@
 //. radio : get time value - client_6_reservation
 
 
+// calender - admin_1_reservation.form
+    var adminDateResult = $("#adminDateResult");
+    $("#adminCalendar").datepicker({
+        onSelect: function(){
+            var date = $.datepicker.formatDate("yy-mm-dd", $("#adminCalendar").datepicker("getDate"));
+            adminDateResult.val(date);
+        }
+    });
+//. calender - admin_1_reservation.form
+
+
 // calender - client_6_reservation.form
-        var dateResult = $('#dateResult');
-        $("#date1").datepicker({
-            onSelect: function(){
-                var date = $.datepicker.formatDate("yy-mm-dd", $("#date1").datepicker("getDate"));
-                dateResult.val(date);
-            }
-        });
+    var dateResult = $('#dateResult');
+    $("#date1").datepicker({
+        onSelect: function(){
+            var date = $.datepicker.formatDate("yy-mm-dd", $("#date1").datepicker("getDate"));
+            dateResult.val(date);
+        }
+    });
 //. calender - client_6_reservation.form

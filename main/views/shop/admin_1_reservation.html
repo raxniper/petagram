@@ -13,11 +13,14 @@
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Common CSS -->
-  <link href="../../css/common.css" rel="stylesheet">
-
   <!-- Jquery Modal CSS -->
   <link href="../../vendor/jquery/jquery.modal.css" rel="stylesheet">
+
+  <!-- Jquery UI CSS -->
+  <link href="../../vendor/jquery/jquery-ui.min.css" rel="stylesheet">
+
+  <!-- Custom Common CSS -->
+  <link href="../../css/common.css" rel="stylesheet">
 
 </head> 
 
@@ -146,28 +149,28 @@
                   <div class="pop-close-x">
                     <a type="button" class="close btn-layerClose" aria-label="Close" href="#"><span aria-hidden="true">&times;</span></a>
                   </div>
-                  <table class="table table-sm text-center">
-                    <thead>
-                      <tr><th scope="col">No</th><th scope="col">예약가능시간</th><th scope="col">설정</th></tr>
-                    </thead>
-                    <tbody>
-                      <tr><th scope="row">1</th><td>08:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">2</th><td>09:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">3</th><td>10:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">4</th><td>11:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">5</th><td>12:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">6</th><td>13:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">7</th><td>14:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">8</th><td>15:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">9</th><td>16:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">10</th><td>17:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">11</th><td>18:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                      <tr><th scope="row">12</th><td>19:00</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
-                    </tbody>
-                  </table>
-                  <div class="btn-r">
-                    <a class="btn btn-primary btn-sm btn-layerClose" href="#" role="button">확인</a>
-                    <a class="btn btn-secondary btn-sm btn-layerClose" href="#" role="button">닫기</a>
+                  <div class="px-5 mb-3">
+                    <input type="text" class="form-control mb-3" id="adminDateResult" placeholder="날짜를 선택하세요.">
+                  </div>
+                  <div id="adminCalendar" class="px-5 mb-3"></div>
+                  <div class="px-5 mb-3">
+                    <table class="table table-sm text-center">
+                      <thead>
+                        <tr><th scope="col" colspan="2">예약가능시간</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="08:00">08:00</label></td><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="14:00">14:00</label></td></tr>
+                        <tr><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="09:00">09:00</label></td><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="15:00">15:00</label></td></tr>
+                        <tr><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="10:00">10:00</label></td><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="16:00">16:00</label></td></tr>
+                        <tr><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="11:00">11:00</label></td><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="17:00">17:00</label></td></tr>
+                        <tr><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="12:00">12:00</label></td><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="18:00">18:00</label></td></tr>
+                        <tr><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="13:00">13:00</label></td><td><label class="m-0"><input type="checkbox" class="mr-2" name="adminTimeSetting" value="19:00">19:00</label></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-r px-5 text-center">
+                    <a class="btn btn-primary btn-sm btn-layerClose mr-2 px-3" href="#" role="button">확인</a>
+                    <a class="btn btn-secondary btn-sm btn-layerClose ml-2 px-3" href="#" role="button">닫기</a>
                   </div>
                   <!-- /. 예약팝업 -->
                 </div>
@@ -231,7 +234,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../../vendor/jquery/jquery.min.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Jquery UI javaScript -->
+  <script src="../../vendor/jquery/jquery-ui.min.js"></script>
+  <script src="../../vendor/jquery/datepicker-ko.js"></script>
+
+  <!-- custom javascript -->
   <script src="../../js/common.js"></script>
+
 </body>
 
 </html>
