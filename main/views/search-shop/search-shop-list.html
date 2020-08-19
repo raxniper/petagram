@@ -54,7 +54,7 @@
     <div class="container">
       <div class="row">
         <!-- 타이틀 -->
-        <div class="col-md-4 text-left"><h2><b>매장 찾기 - 지도</b></h2></div>
+        <div class="col-md-4 text-left"><h2><b>매장 찾기 - 검색</b></h2></div>
         <!-- 네비 -->
         <div class="col-md-8 text-right pt-2" style="font-size: 14px;">
           <a href="#">매장 찾기</a>
@@ -72,8 +72,8 @@
       <!-- 좌측 네비 -->
       <div class="col-md-2 order-md-1 mb-4">
         <ul class="list-group mb-3 left-navi">
-          <li class="list-group-item d-flex justify-content-between bg-primary"><div><h6 class="my-0"><a href="#" class="text-light">지도 찾기</a></h6></div></li>
-          <li class="list-group-item d-flex justify-content-between"><div><h6 class="my-0"><a href="#">검색 찾기</a></h6></div></li>
+          <li class="list-group-item d-flex justify-content-between"><div><h6 class="my-0"><a href="#">지도 찾기</a></h6></div></li>
+          <li class="list-group-item d-flex justify-content-between bg-primary"><div><h6 class="my-0"><a href="#" class="text-light">검색 찾기</a></h6></div></li>
         </ul>
       </div>
       <!-- /. 좌측 네비 -->
@@ -81,14 +81,15 @@
       <!-- 컨텐츠 메인 -->
       <div class="col-md-10 order-md-2">
         
-        <!-- 지도 API -->
-        <div class="row text-left">
-          <!-- 지도 API 들어갈 부분 -->
-          <div class="col-md-12"><img src="../../image/search-shop/shop_map.jpg" style="width: 100%;"></div>
+        <!-- 검색 영역 -->
+        <div class="row text-center mt-3 mb-5">
+          <div class="col-md-2"></div>
+          <div class="col-md-7 px-1"><input type="id" id="" name="" class="form-control" placeholder="찾으실 매장이름을 입력해주세요." autofocus></div>
+          <div class="col-md-1 px-1"><button class="btn btn-primary btn-block px-0" type="button">검색</button></div>
+          <div class="col-md-2"></div>
         </div>
-        <!-- /. 지도 API -->
-
-        <hr class="my-5">
+        <hr class="mb-5">
+        <!-- /. 검색 영역 -->
         
         <!-- 매장목록 반복문 돌릴구간 - 예시 1번 -->
         <div class="row my-4">

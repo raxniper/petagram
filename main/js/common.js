@@ -106,6 +106,40 @@
     starRating();
 //. score star
 
+// score star - shopRating (search-shop-map.form)
+var starRating = function(){
+    var $star = $(".shopSearch-shopRating"),
+        $result = $star.find("output>b");
+    $(document)
+    .on("focusin", ".shopSearch-shopRating>.input", function(){
+    $(this).addClass("focus");
+    })
+    .on("focusout", ".shopSearch-shopRating>.input", function(){
+    var $this = $(this);
+    setTimeout(function(){
+        if($this.find(":focus").length === 0){
+        $this.removeClass("focus");
+        }
+    }, 100);
+    })
+    .on("change", ".shopSearch-shopRating :radio", function(){
+    $result.text($(this).next().text());
+    })
+    .on("mouseover", ".shopSearch-shopRating label", function(){
+    $result.text($(this).text());
+    })
+    .on("mouseleave", ".shopSearch-shopRating>.input", function(){
+    var $checked = $star.find(":checked");
+    if($checked.length === 0){
+        $result.text("0");
+    } else {
+        $result.text($checked.next().text());
+    }
+    });
+};
+starRating();
+//. score star - shopRating (search-shop-map.form)
+
 
 // drop down - client_6_reservation
     var lblName = $('.lblName')
